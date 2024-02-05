@@ -19,7 +19,7 @@ body{
 
 .col{
   display: flex;
-  height: 100%;
+  height: 90%;
 }
 
 .col.left{
@@ -184,30 +184,59 @@ img{
   color: rgb(117, 117, 117);
 }
 
+/* MAIN CHAT */
+.main-chat{
+  display: flex;
+  background: url(../img/mine.jpg);
+  background-size: cover;
+}
+
+.main-chat .container{
+  display: flex;
+  flex-flow: column;
+  padding: 2% 3%;
+}
+
+.message{
+  display: flex;
+  width: 50%;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 5px 0;
+}
+
 /* MEDIA QUERY */
+
+/* TABLET */
 @media screen and (max-width: 992px){
-  .head-buttons{display: none;}
+  .head-buttons{
+    display: none;
+  }
 
-  .container{width: 100%;}
+  .col.right{
+    width: 100%;
+  }
 
-  .col.right{width: 100%;}
+  .col.right:last-child div{
+    display: flex;
+  }
 
-  .col.right:last-child div{display: flex;}
-
-  .col.left{width: 100px;}
-
-  .notify{display: none;}
-
-  .search{display: none;}
+  .col.left{
+    width: 100px;
+  }
   
-  .notify, .search, .chat-name, .time{display: none;}
+  .col.left .time, .search, .chat-name, .notify{
+    display: none;
+  }
 }
 
 /* MOBILE */
 @media screen and (max-width: 542px){
   .col.left{display: none;}
 
-  .col.right{width: 100%;}
+  .col.right{
+    width: 100%;
+  }
 
   .col.right ul{display: none;}
 }
