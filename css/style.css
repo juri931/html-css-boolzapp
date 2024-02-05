@@ -132,7 +132,8 @@ img{
 
 /* CHAT LIST */
 .chat-list ul{
-  overflow-y: scroll;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .chat-list li{
@@ -260,6 +261,10 @@ textarea{
   
   .col.left .time, .search, .chat-name, .notify{
     display: none;
+  }
+
+  .message{
+    width: 90%;
   }
 }
 
