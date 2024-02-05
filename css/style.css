@@ -216,6 +216,28 @@ img{
   background-color: white;
 }
 
+/* TEXT ENTER */
+.text-enter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(241, 238, 234);
+}
+
+.text-enter i{
+  font-size: 2rem;
+  color: rgb(108, 114, 117);
+}
+
+textarea{
+  width: 90%;
+  border-style: none;
+  border-radius: 5px;
+  padding: 10px 0 0 10px;
+}
+
 /* MEDIA QUERY */
 
 /* TABLET */
