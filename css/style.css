@@ -6,8 +6,6 @@
 
 body{
   font-family: "Lato", sans-serif;
-  display: flex;
-  justify-content: center;
 }
 
 .container{
@@ -19,11 +17,10 @@ body{
 
 .col{
   display: flex;
-  height: 90%;
 }
 
 .col.left{
-  width: 33%;
+  width: 25%;
   flex-flow: column;
 }
 
@@ -61,7 +58,7 @@ img{
 }
 
 .col.right{
-  width: 66%;
+  width: 75%;
   flex-flow: column;
 }
 
@@ -136,7 +133,6 @@ img{
 /* CHAT LIST */
 .chat-list ul{
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .chat-list li{
@@ -162,10 +158,6 @@ img{
   background-color: lightgray;
 }
 
-.chat-img{
-  /* width: 70px; */
-}
-
 .chat-name{
   display: flex;
   flex-flow: column;
@@ -183,8 +175,9 @@ img{
 /* MAIN CHAT */
 .main-chat{
   display: flex;
+  height: 100%;
   background: url(../img/mine.jpg);
-  background-size: cover;
+  background-size: contain;
 }
 
 .main-chat .container{
@@ -195,10 +188,32 @@ img{
 
 .message{
   display: flex;
-  width: 50%;
+  font-weight: bold;
+  width: 65%;
   border-radius: 15px;
   padding: 15px;
   margin: 5px 0;
+}
+
+.chat-time{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.chat-time i, .chat-time span{
+  text-align: center;
+  color: rgb(198, 197, 197);
+}
+
+.main-chat .message:first-of-type{
+  align-self: flex-end;
+  background-color: rgb(219, 247, 184);
+}
+
+.main-chat .message:last-of-type{
+  align-self: flex-start;
+  background-color: white;
 }
 
 /* MEDIA QUERY */
