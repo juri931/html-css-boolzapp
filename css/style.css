@@ -6,4 +6,84 @@
 
 body{
   font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  width: 80%;
+  height: 90%;
+  margin: 5% auto;
+}
+
+.col{
+  display: flex;
+  height: 100%;
+}
+
+.col.left{
+  width: 30%;
+  flex-flow: column;
+}
+
+.head{
+  background-color: #e9e9ea;
+  padding: 10px;
+  height: 10%;
+}
+
+.head.left{
+  display: flex;
+  border-right: 1px solid lightgray;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head img{
+  width: 70px;
+  border-radius: 50%;
+}
+
+.head-buttons ul{
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+}
+
+.head-buttons li{
+  margin: 0 10px;
+}
+
+.head-buttons li a{
+  color: rgb(175, 175, 176);
+}
+
+
+.col.right{
+  width: 70%;
+  flex-flow: column;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 992px){
+  .head-buttons{
+    display: none;
+  }
+
+  .col.left{
+    width: 100px;
+  }
+  
+}
+
+
+@media screen and (max-width: 542px){
+  .col.left {
+      display: none;
+    }
+
+  .col.right{
+    width: 100%;
+  }
 }
