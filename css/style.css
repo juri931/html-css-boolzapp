@@ -134,9 +134,9 @@ img{
 }
 
 /* CHAT LIST */
-
 .chat-list ul{
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .chat-list li{
@@ -200,6 +200,7 @@ img{
 
   .search{display: none;}
   
+  .notify, .search, .chat-name, .time{display: none;}
 }
 
 /* MOBILE */
