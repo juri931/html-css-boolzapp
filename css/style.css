@@ -6,12 +6,20 @@
 
 body{
   font-family: "Lato", sans-serif;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #009688 0,
+    #009688 15%,
+    #dadbd4 15%,
+    #dadbd4 100%);
+    overflow: hidden;
 }
 
 .container{
   display: flex;
   width: 80%;
-  height: 95%;
+  height: 90%;
   margin: 5% auto;
 }
 
@@ -22,6 +30,8 @@ body{
 .col.left{
   width: 25%;
   flex-flow: column;
+  max-height: 95vh;
+  overflow: auto;
 }
 
 .head{
@@ -60,6 +70,7 @@ img{
 .col.right{
   width: 75%;
   flex-flow: column;
+  max-height: 95vh;
 }
 
 .head.right{
@@ -131,16 +142,12 @@ img{
 }
 
 /* CHAT LIST */
-.chat-list ul{
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
 .chat-list li{
   list-style: none;
   font-size: .9rem;
   padding: 5px;
   border: 1px solid lightgray;
+  background: white;
 }
 
 .chat-list a{
@@ -249,6 +256,12 @@ textarea{
   .container{
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background: none;
   }
   
   .head-buttons{display: none;}
