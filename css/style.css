@@ -11,7 +11,7 @@ body{
 .container{
   display: flex;
   width: 80%;
-  height: 90%;
+  height: 95%;
   margin: 5% auto;
 }
 
@@ -65,11 +65,11 @@ img{
 .head.right{
   display: flex;
   justify-content: space-between;
+  min-height: 90px;
 }
 
 .head-img{
   display: flex;
-  flex-flow: row;
 }
 
 .name{
@@ -132,7 +132,7 @@ img{
 
 /* CHAT LIST */
 .chat-list ul{
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
@@ -141,6 +141,7 @@ img{
   font-size: .9rem;
   padding: 5px;
   border: 1px solid lightgray;
+  max-height: 85px;
 }
 
 .chat-list a{
@@ -234,7 +235,7 @@ img{
 }
 
 textarea{
-  width: 90%;
+  width: 80%;
   border-style: none;
   border-radius: 5px;
   padding: 10px 0 0 10px;
@@ -245,38 +246,33 @@ textarea{
 
 /* TABLET */
 @media screen and (max-width: 992px){
-  .head-buttons{
-    display: none;
-  }
 
-  .col.right{
+  .container{
     width: 100%;
-  }
-
-  .col.right:last-child div{
-    display: flex;
-  }
-
-  .col.left{
-    width: 100px;
+    height: 100%;
   }
   
-  .col.left .time, .search, .chat-name, .notify{
-    display: none;
-  }
+  .head-buttons{display: none;}
 
-  .message{
-    width: 90%;
-  }
+  .col.right{width: 100%;}
+
+  .col.right:last-child div{display: flex;}
+
+  .col.left{width: 100px;}
+  
+  .col.left .time,
+  .search,
+  .chat-name,
+  .notify{display: none;}
+
+  .message{width: 90%;}
 }
 
 /* MOBILE */
 @media screen and (max-width: 542px){
   .col.left{display: none;}
 
-  .col.right{
-    width: 100%;
-  }
+  .col.right{width: 100%;}
 
   .col.right ul{display: none;}
 }
