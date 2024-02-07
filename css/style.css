@@ -294,16 +294,10 @@ textarea{
   .chevron{
     right: 5%;
   }
-
-  body{
-    background: none;
-  }
   
   .head-buttons{display: none;}
 
   .col.right{width: 100%;}
-
-  .col.right:last-child div{display: flex;}
 
   .col.left{width: 100px;}
   
