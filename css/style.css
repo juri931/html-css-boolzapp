@@ -206,10 +206,39 @@ img{
   margin: 5px 0;
 }
 
+.chevron{
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 20px;
+  right: 20%;
+  display: flex;
+  position: absolute;
+  box-shadow: rgb(203, 203, 203) 3px 3px 4px 3px;
+  display: none;
+}
+
+.chevron li{
+  padding: 10px;
+  list-style: none;
+}
+
+.chevron li:hover{
+  background-color: rgb(189, 189, 189);
+  cursor: pointer;
+}
+
 .chat-time{
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+
+.chat-time i{
+  cursor: pointer;
+}
+
+.chat-time:hover{
+  .chevron{display: block;}
 }
 
 .chat-time i, .chat-time span{
@@ -262,6 +291,10 @@ textarea{
     padding: 0;
   }
 
+  .chevron{
+    right: 5%;
+  }
+
   body{
     background: none;
   }
@@ -288,5 +321,9 @@ textarea{
 
   .col.right{width: 100%;}
 
-  .col.right ul{display: none;}
+  .col.right .head-buttons ul{display: none;}
+
+  .chevron{
+    right: 10%;
+  }
 }
